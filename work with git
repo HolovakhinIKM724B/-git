@@ -1,0 +1,18 @@
+#include <iostream> 
+using namespace std;
+int main() {
+    double number; // Змінна для зберігання введеного числа  
+    double sum = 0; // Змінна для накопичення суми від’ємних чисел  
+
+    cout << "Enter real numbers (enter 0 to complete):" << endl;
+
+    do {
+        cin >> number; // Введення числа  
+        if (number < 0) { // Перевірка, чи є число від’ємним  
+            sum += number; // Додавання до суми  
+        }
+    } while (number != 0); // Цикл продовжується, поки не введено 0  
+
+    cout << "The sum of negative numbers: " << sum << endl; // Виведення результату  
+    return 0;
+}
